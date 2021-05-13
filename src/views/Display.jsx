@@ -25,9 +25,9 @@ const Display = (props) => {
             {
                 error ?
                 <WrongDroids/>
-                : category.toLowerCase() == "people" ?
+                : category.toLowerCase() === "people" ?
                 <Person person={data}/>
-                : category.toLowerCase() == "planets" ?
+                : category.toLowerCase() === "planets" ?
                 <Planet planet={data}/>
                 :''
             }

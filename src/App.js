@@ -23,7 +23,7 @@ function App() {
   const submitHandler = e =>{
     const { category, id } = searchTerms;
     e.preventDefault();
-    navigate(`${category}/${id}`);
+    navigate(`/${category}/${id}`);
   };
 
 
